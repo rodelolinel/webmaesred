@@ -1,0 +1,67 @@
+🧪 GESTIÓN DE ENTORNOS
+🔹 Crear un entorno nuevo
+conda create -n NOMBRE_ENTORNO python=VERSION
+Ejemplo:
+
+conda create -n djangoenv python=3.12.3
+
+🔹 Activar un entorno
+conda activate NOMBRE_ENTORNO
+Ejemplo:
+conda activate djangoenv
+
+🔹 Desactivar el entorno actual
+conda deactivate
+
+🔹 Listar todos los entornos
+conda env list
+
+🔹 Eliminar un entorno
+conda env remove -n NOMBRE_ENTORNO
+Ejemplo:
+conda env remove -n djangoenv
+
+📦 GESTIÓN DE PAQUETES
+🔹 Instalar un paquete
+conda install NOMBRE_PAQUETE
+Ejemplo:
+conda install numpy
+
+🔸 También puedes usar pip install dentro de un entorno Conda activado.
+
+🔹 Eliminar un paquete
+conda remove NOMBRE_PAQUETE
+
+🔹 Actualizar un paquete
+conda update NOMBRE_PAQUETE
+
+🔹 Listar paquetes instalados
+conda list
+
+📤 EXPORTAR E IMPORTAR ENTORNOS
+🔹 Exportar el entorno actual
+conda env export > environment.yml
+🔹 Crear un entorno desde un archivo
+conda env create -f environment.yml
+
+🔍 INFORMACIÓN Y AYUDA
+🔹 Información general de Conda
+conda info
+
+🔹 Información sobre el entorno actual
+conda list
+
+🔹 Ver canales de instalación
+conda config --show channels
+
+🌐 USO DE CANALES ALTERNATIVOS (opcional)
+Algunos paquetes se encuentran en otros canales como conda-forge.
+Ejemplo:
+conda install -c conda-forge nombre_paquete
+
+🎒 EXTRA: TRUCO PARA VS CODE
+Para que VS Code detecte el entorno automáticamente al abrir el proyecto:
+code /ruta/al/proyecto
+Pero antes de eso, activa el entorno:
+conda activate djangoenv
+Así el entorno queda visible para VS Code al abrirlo.
