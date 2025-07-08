@@ -1,0 +1,33 @@
+
+{% extends "bases/base_principal.html" %}
+{% load static %}
+
+<!-- head -->
+
+
+
+{% block logo_letra %}
+{% static 'assets/images/logoMaesB.svg' %}
+{% endblock logo_letra %}
+
+{% block logo_mini %}
+{% static 'logo-mini.svg'%}
+{% endblock logo_mini %}
+
+{% block logo_cliente %}
+{% static 'assets/images/faces/faceCliente.jpg' %}
+{% endblock logo_cliente %}
+
+
+{% block menus %}
+<!--
+<li class="nav-item menu-items">
+    <a class="nav-link" href="../../pages/forms/basic_elements.html">
+      <span class="menu-icon">
+        <i class="mdi mdi-playlist-play"></i>
+      </span>
+      <span class="menu-title">Galería</span>
+    </a>
+  </li>
+  -->
+{% endblock menus %}

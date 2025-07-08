@@ -1,0 +1,23 @@
+Estructura
+
+webmaesred/
+│
+├── maesred/           ← Carpeta del proyecto principal (configuración general)
+│   ├── __init__.py    → Hace que esta carpeta sea un paquete Python
+│   ├── settings.py    → Aquí van todas las configuraciones del proyecto (bases de datos, apps instaladas, etc.)
+│   ├── urls.py        → Define las rutas principales del sitio (como el índice de tu web)
+│   ├── asgi.py        → Configuración para servidores ASGI (menos usada, pero útil si usas WebSockets)
+│   └── wsgi.py        → Punto de entrada para servidores WSGI (para despliegue tradicional)
+│
+├── apps               ← Aquí irán tus aplicaciones personalizadas (como 'principal')
+│   └── principal      ← Una app que ya has creado
+│       ├── admin.py   → Aquí registras modelos para que aparezcan en el panel de administrador de Django
+│       ├── apps.py    → Configuración específica de la app (por ejemplo, su nombre)
+│       ├── models.py  → Aquí defines tus modelos (estructura de la base de datos)
+│       └── views.py   → Aquí escribirás las vistas (lógica que define qué mostrar en cada página)
+│
+├── static             ← Aquí pondrás archivos como CSS, JS e imágenes para usar en tus plantillas
+│
+├── templates          ← Aquí irán los archivos HTML que se renderizarán dinámicamente
+│
+└── manage.py          → Herramienta principal para interactuar con tu proyecto (correr servidor, crear migraciones, etc.)
